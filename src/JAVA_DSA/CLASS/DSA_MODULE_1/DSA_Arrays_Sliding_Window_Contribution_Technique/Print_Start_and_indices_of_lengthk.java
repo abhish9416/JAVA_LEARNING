@@ -1,6 +1,5 @@
 package CLASS.DSA_MODULE_1.DSA_Arrays_Sliding_Window_Contribution_Technique;
 
-import jdk.nashorn.internal.parser.JSONParser;
 
 public class Print_Start_and_indices_of_lengthk {
     public static void solve(int[]A,int k){

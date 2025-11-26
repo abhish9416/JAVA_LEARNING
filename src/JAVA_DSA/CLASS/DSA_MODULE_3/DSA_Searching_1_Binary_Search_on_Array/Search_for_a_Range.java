@@ -1,4 +1,4 @@
-package JAVA_DSA.CLASS.DSA_MODULE_3.Binary_Search;
+package CLASS.DSA_MODULE_3.DSA_Searching_1_Binary_Search_on_Array;
 
 import java.util.Arrays;
 
@@ -6,12 +6,12 @@ public class Search_for_a_Range {
     public static int firstOccurance(int[]A,int K){
         int n = A.length;
         int start = 0,end = n-1,ans = -1;
-        while (start<=end){
+        while(start<=end){
             int mid = start+(end-start)/2;
-            if(A[mid]==K) {
+            if(A[mid]==K){
                 ans = mid;
-                end = mid - 1;
-            }else if(A[mid] < K){
+                end = mid-1;
+            }else if(A[mid]<K){
                 start = mid+1;
             }else{
                 end = mid-1;
@@ -22,12 +22,12 @@ public class Search_for_a_Range {
     public static int lastOccurance(int[]A,int K){
         int n = A.length;
         int start = 0,end = n-1,ans = -1;
-        while (start<=end){
-            int mid = start+(end-start) / 2;
-            if(A[mid] == K){
+        while(start<=end){
+            int mid = start+(end-start)/2;
+            if(A[mid]==K){
                 ans = mid;
                 start = mid+1;
-            }else if(A[mid] < K){
+            }else if(A[mid]<K){
                 start = mid+1;
             }else{
                 end = mid-1;
@@ -35,16 +35,15 @@ public class Search_for_a_Range {
         }
         return ans;
     }
-    public static int[] solve(int[]A,int B){
-        int start = firstOccurance(A,B);
-        int last = lastOccurance(A,B);
-        return new int[]{start,last};
+    public static int[] solve(int[] A,int K){
+        int first = firstOccurance(A,K);
+        int last = lastOccurance(A,K);
+        return new int[] {first,last};
     }
     public static void main(String[] args) {
         int[]A = {5, 7, 7, 8, 8, 10};
         int K = 8;
-        System.out.println(firstOccurance(A,K));
-        System.out.println(lastOccurance(A,K));
         System.out.println(Arrays.toString(solve(A,K)));
     }
+
 }

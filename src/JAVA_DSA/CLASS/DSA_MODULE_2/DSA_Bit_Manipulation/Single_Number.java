@@ -1,6 +1,5 @@
 package CLASS.DSA_MODULE_2.DSA_Bit_Manipulation;
 
-import org.omg.CORBA.PUBLIC_MEMBER;
 
 public class Single_Number {
     public static int solve(int[]A){

@@ -1,7 +1,5 @@
 package CLASS.DSA_MODULE_1.Sorting_Basics;
 
-import jdk.nashorn.internal.runtime.JSONListAdapter;
-
 import java.util.Arrays;
 
 public class Bubble_Sort {
