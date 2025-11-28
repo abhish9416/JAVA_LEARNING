@@ -1,4 +1,4 @@
-package CLASS.DSA_MODULE_3.Binary_Search;
+package STRIVERS.BINARY_SEARCH.Binary_search_1D_Arrays;
 
 import java.util.Arrays;
 

@@ -1,22 +1,21 @@
-package JAVA_DSA.CLASS.DSA_MODULE_3.Binary_Search;
+package STRIVERS.BINARY_SEARCH.Binary_search_1D_Arrays;
 
-public class Implement_Upper_Bound {
+public class Implement_Lower_Bound {
     public static int bruteforce(int[]A,int K){
-        int n =  A.length;
-        int ans = n;
+        int n = A.length;
         for(int i=0;i<n;i++){
-            if(A[i]>K){
+            if(A[i]>=K){
                 return i;
             }
         }
-        return ans;
+        return -1;
     }
     public static int solve(int[]A,int K){
         int n = A.length;
-        int start = 0,end = n-1,ans = n;
+        int start = 0,end = n-1,ans = -1;
         while(start<=end){
             int mid = start+(end-start)/2;
-            if(A[mid]>K){
+            if(A[mid]>=K){
                 ans = mid;
                 end = mid-1;
             }else{
@@ -26,8 +25,8 @@ public class Implement_Upper_Bound {
         return ans;
     }
     public static void main(String[] args) {
-        int[]A = {3,5,8,15,19};
-        int x = 9;
+        int[] A = {1,2,2,3};
+        int x = 2;
         System.out.println(bruteforce(A,x));
         System.out.println(solve(A,x));
     }

@@ -1,4 +1,4 @@
-package CLASS.DSA_MODULE_3.Binary_Search;
+package STRIVERS.BINARY_SEARCH.Binary_search_1D_Arrays;
 
 public class Count_Occurrences_in_Sorted_Array {
     public static int first(int[] A, int K) {

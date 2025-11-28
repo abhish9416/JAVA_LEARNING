@@ -1,4 +1,4 @@
-package STRIVERS.BINARY_SEARCH;
+package STRIVERS.BINARY_SEARCH.Binary_search_1D_Arrays;
 
 public class LocalMinima {
     public static int safeget(int[]A,int i){
